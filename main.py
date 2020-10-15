@@ -13,3 +13,4 @@ if __name__ == '__main__':
     for p in peptides:
         mutate_atoms(str(p))
     print("The mutation of atoms finished. Starting the docking process...")
+    # dock the known peptide sequence and protein
