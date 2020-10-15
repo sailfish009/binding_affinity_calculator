@@ -1,0 +1,33 @@
+<ROSETTASCRIPTS>
+	<TASKOPERATIONS>
+		<InitializeFromCommandline name="IFC"/>
+		<IncludeCurrent name="IC"/>
+		<RestrictDesignToProteinDNAInterface name="DnaInt" base_only="1" z_cutoff="3.0" dna_defs="C.-8,C.-7,C.-6,C.-5"/>
+		<OperateOnCertainResidues name="AUTOprot">
+			<ResidueHasProperty property="PROTEIN"/>
+			<AddBehaviorRLT behavior="AUTO"/>
+		</OperateOnCertainResidues>
+		<OperateOnCertainResidues name="ProtNoDes">
+			<ResidueHasProperty property="PROTEIN"/>
+			<RestrictToRepackingRLT/>
+		</OperateOnCertainResidues>
+		<OperateOnCertainResidues name="DnaNoPack">
+			<ResidueHasProperty property="DNA"/>
+			<PreventRepackingRLT/>
+		</OperateOnCertainResidues>
+	</TASKOPERATIONS>
+	<SCOREFXNS>
+		<ScoreFunction name="DNA" weights="dna"/>
+		<ScoreFunction name="DNAGB" weights="dna_gb"/>
+	</SCOREFXNS>
+	<FILTERS>
+		<FalseFilter name="falsefilter"/>
+	</FILTERS>
+	<MOVERS>
+		<DnaInterfacePacker name="DnaPack" scorefxn="DNA" task_operations="IFC,IC,AUTOprot,ProtNoDes,DnaInt" binding="1" probe_specificity="2" minimize="0"/>
+	</MOVERS>
+	<PROTOCOLS>
+		<Add mover_name="DnaPack"/>
+	</PROTOCOLS>
+
+</ROSETTASCRIPTS>

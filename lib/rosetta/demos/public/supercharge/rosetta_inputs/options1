@@ -1,0 +1,24 @@
+#-database <path>
+-s rosetta_inputs/2B3P_A_min.pdb
+-use_input_sc
+-jd2:no_output
+-ignore_unrecognized_res
+
+#positive supercharging
+#surface defintion by residue neighbors
+
+-surface_residue_cutoff 16
+-include_arg
+-include_lys
+-refweight_arg -1.98
+-refweight_lys -1.65
+-dont_mutate_glyprocys true
+-dont_mutate_correct_charge true
+-dont_mutate_hbonded_sidechains true
+-nstruct 2
+-compare_residue_energies_all false
+-compare_residue_energies_mut true
+
+-resfile rosetta_inputs/resfile
+
+-out:path example_outputs/outpath1

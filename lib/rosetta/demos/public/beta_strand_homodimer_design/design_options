@@ -1,0 +1,22 @@
+#general options
+-nstruct 10 #try 5000 or so for production runs
+-out::pdb_gz true #do this for production runs
+-pack_min_runs 5 # number of times to do design/packing.
+-make_ala_interface true # makes the interface alanine during docking
+-find_bb_hbond_E true # report the backbone, backbone hbond Energy
+-no_his_his_pairE true 
+-favor_native_res 0.5 #favor native residue to prevent unneeded mutations
+-disallow_res CGP  # prevents design up Gly, Cys, Pro unless it is native
+-run:min_type dfpmin
+-pose_metrics:interface_cutoff 8.0 # interface definition
+-use_input_sc
+-ex1
+-ex2 
+-overwrite
+#old options for docking 
+-docking::docking_local_refine true
+-docking::sc_min true 
+-docking::dock_ppk false 
+#-symmetry:perturb_rigid_body_dofs 3 5 
+-out::file::fullatom 
+-mute core.io.pdb.file_data core.conformation.symmetry.SymmData core.chemical core.conformation.SymmetryInfo core.io.database core.pack.task core.util.switchresiduetypeset basic.io.database

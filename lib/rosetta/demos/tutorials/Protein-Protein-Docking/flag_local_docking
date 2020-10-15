@@ -1,0 +1,15 @@
+-in:file:s input_files/3pwn_clear_original.pdb
+-in:file:native input_files/3pwn_clear_original.pdb
+-unboundrot input_files/3pwn_clear_original.pdb
+
+-nstruct 1
+
+-partners A_B
+-dock_pert 3 8
+
+-ex1
+-ex2aro
+
+-out:path:all output_files
+-out:suffix _local_dock
+
