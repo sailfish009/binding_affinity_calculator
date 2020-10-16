@@ -1,0 +1,231 @@
+# -*- mode:python;indent-tabs-mode:t;show-trailing-whitespace:t; -*-
+#
+# Project settings for rosetta sources
+# (c) Copyright Rosetta Commons Member Institutions.
+# (c) This file is part of the Rosetta software suite and is made available under license.
+# (c) The Rosetta software is developed by the contributing members of the Rosetta Commons.
+# (c) For more information, see http://www.rosettacommons.org. Questions about this can be
+# (c) addressed to University of Washington CoMotion, email: license@uw.edu.
+
+########### KEEP DIRECTORIES AND FILES IN ALPHABETICAL ORDER ###########
+
+sources = {
+	"core/energy_methods": [
+		"FACTSEnergy",
+		"AACompositionEnergy",
+		"AARepeatEnergy",
+		"ArgCationPiEnergy",
+
+		"XtalMLEnergy",
+
+		"CentroidDisulfideEnergy",
+		"DisulfideMatchingEnergy",
+		"FullatomDisulfideEnergy",
+
+		"DNAChiEnergy",
+		"DNATorsionEnergy",
+
+
+		"FA_ElecEnergyAroAll",
+		"FA_ElecEnergyAroAro",
+		"RNA_FA_ElecEnergy",
+		"FA_GrpElecEnergy",
+		"DEEREnergy",
+
+		"ElecDensAllAtomCenEnergy",
+		"ElecDensCenEnergy",
+		"ElecDensEnergy",
+		"FastDensEnergy",
+
+		"ElecDensAtomwiseEnergy",
+
+		"FiberDiffractionEnergy",
+		"FiberDiffractionEnergyDens",
+		"FiberDiffractionEnergyGpu",
+		"FiberDiffractionKernelGpu.cu",
+
+		"ContextDependentGeometricSolEnergy",
+		"ContextIndependentGeometricSolEnergy",
+		"ExactOccludedHbondSolEnergy",
+		"OccludedHbondSolEnergy",
+		"OccludedHbondSolEnergy_onebody",
+		"non_scorefxn_exact_model",
+
+		"HackAroEnergy",
+
+		"NPDHBondEnergy",
+
+		"LoopCloseEnergy",
+
+	    "MgEnergy",
+	    "RNA_MgPointEnergy",
+
+		"MPEnvEnergy",
+		"MPPairEnergy",
+		"MPCBetaEnergy",
+		"FaMPSolvEnergy",
+		"FaMPEnvEnergy",
+		"FaMPEnvSmoothEnergy",
+		"MPResidueLipophilicityEnergy",
+		"MPHelicalityEnergy",
+		"MPSpanInsertionEnergy",
+		"MPSpanAngleEnergy",
+
+		"AromaticBackboneRestraintEnergy",
+		"AspartimidePenaltyEnergy",
+		"BranchEnergy",
+		"BurialEnergy",
+		"Burial_v2Energy",
+		"CartesianBondedEnergy",
+		"CenHBEnergy",
+		"CenPairEnergy",
+		"CenPairMotifEnergy",
+		"CenPairMotifDegreeEnergy",
+		"CenRotEnvEnergy",
+		"ChainbreakEnergy",
+		"ContactOrderEnergy",
+		"CovalentLabelingEnergy",
+		"CovalentLabelingFAEnergy",
+		"CustomAtomPairEnergy",
+		"D2H_SA_Energy",
+		"DirectReadoutEnergy",
+		"DistanceChainbreakEnergy",
+		"DNA_BaseEnergy",
+		"DNA_EnvPairEnergy",
+		"DNA_DihedralEnergy",
+		"DNA_ReferenceEnergy",
+		"EnvEnergy",
+		"EnvSmoothEnergy",
+		"Fa_MbenvEnergy",
+		"Fa_MbsolvEnergy",
+		"FreeDOF_Energy",
+		"GaussianOverlapEnergy",
+		"GenBornEnergy",
+		"GenericBondedEnergy",
+		"HRFDynamicsEnergy",
+		"HRF_MSLabelingEnergy",
+		"MultipoleElecEnergy",
+		"GoapEnergy",
+		"HybridVDW_Energy",
+		"HydroxylTorsionEnergy",
+		"IntermolEnergy",
+		"LinearBranchEnergy",
+		"LinearBranchEnergyCreator",
+		"LinearChainbreakEnergy",
+		"LinearChainbreakEnergyCreator",
+		"LK_PolarNonPolarEnergy",
+		"LK_hack",
+		"MembraneCbetaEnergy",
+		"MembraneCenPairEnergy",
+		"MembraneEnvEnergy",
+		"MembraneEnvPenalties",
+		"MembraneEnvSmoothEnergy",
+		"MembraneLipo",
+		"MissingEnergy",
+		"MotifDockEnergy",
+		"RingClosureEnergy",
+		"OmegaTetherEnergy",
+		"OtherPoseEnergy",
+		"P_AA_Energy",
+		"P_AA_ss_Energy",
+		"P_AA_pp_Energy",
+		"AbegoEnergy",
+		"PackStatEnergy",
+		"PairEnergy",
+		"PeptideBondEnergy",
+		"pHEnergy",
+		"PointWaterEnergy",
+		"PoissonBoltzmannEnergy",
+		"ProClosureEnergy",
+		"ProQ_Energy",
+		"RamaPreProEnergy",
+		"RamachandranEnergy",
+		"RamachandranEnergy2B",
+		"ReferenceEnergy",
+		"ReferenceEnergyNoncanonical",
+		"ResidualDipolarCouplingEnergy",
+		"ResidualDipolarCouplingEnergy_Rohl",
+		"ChemicalShiftAnisotropyEnergy",
+		"DipolarCouplingEnergy",
+		"RG_Energy_Fast",
+		"RG_LocalEnergy",
+		"RMS_Energy",
+		"SA_Energy",
+		"SASAEnergy",
+		"SecondaryStructureEnergy",
+		"SequenceDependentRefEnergy",
+		"SSElementMotifContactEnergy",
+		"SmoothCenPairEnergy",
+		"CenRotPairEnergy",
+		"SmoothEnvEnergy",
+		"SplitUnfoldedTwoBodyEnergy",
+		"SplitUnfoldedTwoBodyEnergyCreator",
+		"SuckerEnergy",
+		"SymmetricLigandEnergy",
+		"UnfoldedStateEnergy",
+		"VdWTinkerEnergy",
+		"WaterAdductHBondEnergy",
+		"WaterAdductIntraEnergy",
+		"WaterSpecificEnergy",
+		"YHHPlanarityEnergy",
+
+		"SugarBackboneEnergy",
+		
+		"DFIRE_Energy",
+		
+		"MHCEpitopeEnergy",
+
+		"NetChargeEnergy",
+
+		"HolesEnergy",
+		"SurfEnergy",
+		"SurfVolEnergy",
+
+		"RG_Energy_RNA",
+		"RNA_BulgeEnergy",
+		"RNA_FullAtomStackingEnergy",
+		"RNA_FullAtomVDW_BasePhosphate",
+		"RNA_JR_SuiteEnergy",
+		"RNA_LJ_BaseEnergy",
+		"RNA_PairwiseLowResolutionEnergy",
+		"RNA_PartitionEnergy",
+		"RNA_SugarCloseEnergy",
+		"RNA_StubCoordinateEnergy",
+		"RNA_SuiteEnergy",
+		"RNA_TorsionEnergy",
+		"RNA_VDW_Energy",
+		"StackElecEnergy",
+		"RNP_LowResEnergy",
+		"RNP_LowResStackEnergy",
+		"RNP_LowResPairDistEnergy",
+		"TNA_SuiteEnergy",
+
+		"RNA_ChemicalShiftEnergy",
+
+		"RNA_ChemicalMappingEnergy",
+		"RNA_DataBackboneEnergy",
+
+		"FastSAXSEnergy",
+		"SAXSEnergy",
+		"SAXSEnergyCreatorCEN",
+		"SAXSEnergyCreatorFA",
+
+		"DumpTrajectoryEnergy",
+
+	],
+}
+include_path = [
+]
+library_path = [
+]
+libraries = [
+]
+subprojects = [
+	"basic",
+	"numeric",
+	"core.1",
+	"core.2",
+	"core.3",
+	"utility",
+	"ObjexxFCL",
+]

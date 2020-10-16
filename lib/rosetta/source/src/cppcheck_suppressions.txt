@@ -1,0 +1,35 @@
+// This is a file to list the suppressions for the cppcheck system
+// The format of each suppression line is:
+
+//        error_id:filename:line
+
+// where you can truncate each trailing part. e.g.
+
+//  unusedScopedObject:protocols/sparta/ANN.cc:58
+//  unusedScopedObject:protocols/sparta/ANN.cc
+//  unusedScopedObject
+
+// Use the --xml option of cppcheck to get the error_id of a particular error.
+//
+// Alternatively, use `cppcheck --errorlist` and look for the corresponding error message.
+//
+// When supressing errors here, please leave a comment explaining why
+// what you're suppressing isn't really an error.
+
+//////////////////////
+// GENERAL EXCLUSIONS
+
+// This is a check that's error prone, and has been removed from more recent versions of cppcheck.
+unnecessaryForwardDeclaration
+// This triggers for braced initializers in classes
+constStatement
+// This is a style warning, and Rosetta style isn't much for std algorithms with iterators and lambdas.
+useStlAlgorithm
+// Single argument constructors not marked as explicit are okay. We shouldn't worry.
+noExplicitConstructor
+
+//////////////////////
+// SPECIFIC EXCLUSIONS
+
+// The TenANeighborGraph::tenA_edge_pool_ is handled properly through virtual function calls made by the parent operator
+operatorEqVarError:core/scoring/TenANeighborGraph.cc
