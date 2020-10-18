@@ -15,7 +15,7 @@ lock = threading.Lock()
 #   desired_sequence: A new sequence of peptide that can be substituted to the peptide-MHC complex
 # Returns:
 #   No return values. However, the pdb files with new sequences will be written to the directory of
-#   structures/intermediate.
+#   structures/mutated_intermediate.
 def mutate_atoms(desired_sequence):
     # Acquire the lock once you execute this program
     lock.acquire()
@@ -38,7 +38,7 @@ def mutate_atoms(desired_sequence):
         cmd.get_wizard().set_mode(new_sequence[i])
         cmd.get_wizard().do_select("C/%d/" % (i+1))
         cmd.get_wizard().apply()
-    cmd.save("structures/intermediate/mutated_pmhc_complex_%s.pdb" % desired_sequence)
+    cmd.save("structures/mutated_intermediate/mutated_pmhc_complex.pdb")
     cmd.reset()
     cmd.quit()
     # Release the lock when the program ends

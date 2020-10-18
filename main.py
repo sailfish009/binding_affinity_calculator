@@ -3,6 +3,7 @@
 from utility.mutation import mutate_atoms
 from utility.residue_matching_loader import load_residue_matching
 from utility.peptide_loader import load_peptides
+from utility.dock import dock
 
 
 if __name__ == '__main__':
@@ -15,3 +16,4 @@ if __name__ == '__main__':
     print("The mutation of atoms finished. Starting the docking process...")
     # dock the known peptide sequence and protein
     print("Docking started.")
+    dock()

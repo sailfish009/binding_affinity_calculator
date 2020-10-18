@@ -1,4 +1,4 @@
--in:file:s input_files/merged_chains.pdb
+-in:file:s mutated_intermediate/mutated_pmhc_complex.pdb
 
 -nstruct 1
 
@@ -10,5 +10,5 @@
 -ex2aro
 
 -out:file:fullatom
--out:path:all output_files
+-out:path:all docked_intermediate
 -out:suffix _local_refine

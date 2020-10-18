@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# creates intermediate .csv and final .arff file for a single command line arg
+# creates mutated_intermediate .csv and final .arff file for a single command line arg
 
 usage() {
     echo "usage: $(basename $0) [-v <n>] [-c <n>] [-prefix <prefix>] <file-in.csv> [extra-args]" > /dev/stderr
