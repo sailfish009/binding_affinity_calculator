@@ -1,4 +1,4 @@
--in:file:s mutated_intermediate/mutated_pmhc_complex.pdb
+-in:file:s structures/mutated_intermediate/mutated_pmhc_complex.pdb
 
 -nstruct 1
 
@@ -10,5 +10,5 @@
 -ex2aro
 
 -out:file:fullatom
--out:path:all docked_intermediate
+-out:path:all structures/docked_intermediate
 -out:suffix _local_refine

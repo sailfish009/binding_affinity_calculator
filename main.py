@@ -16,4 +16,4 @@ if __name__ == '__main__':
     print("The mutation of atoms finished. Starting the docking process...")
     # dock the known peptide sequence and protein
     print("Docking started.")
-    # dock()
+    print(dock())
