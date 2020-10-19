@@ -8,5 +8,6 @@ if __name__ == '__main__':
     print("Starting the mutation of atoms...")
     os.system("python3 generate_mutation.py")
     print("The mutation of atoms finished. Starting the docking process...")
-    dock()
+    print("Some side product of the docking: ")
+    binding_energy_docking = dock()
     print("The docking process completed. Starting the calculation of binding affinity...")
