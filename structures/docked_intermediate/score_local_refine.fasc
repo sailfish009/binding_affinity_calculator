@@ -1,3 +1,0 @@
-SEQUENCE: 
-SCORE: total_score         rms CAPRI_rank       Fnat       I_sc       Irms   Irms_leg dslf_fa13    fa_atr    fa_dun   fa_elec fa_intra_rep fa_intra_sol_xover4              fa_rep              fa_sol hbond_bb_sc hbond_lr_bb    hbond_sc hbond_sr_bb lk_ball_wtd       omega     p_aa_pp pro_close rama_prepro         ref yhh_planarity description 
-SCORE:    -341.628       0.299      3.000      0.973    -47.735      0.586      0.099    -3.582 -2300.347   921.716  -590.167        3.874              81.963             360.070            1417.750     -65.640    -153.336     -41.915     -84.107     -45.214      80.371     -50.449    59.182      -4.486      72.687         0.000 mutated_pmhc_complex_local_refine_0001
