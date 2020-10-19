@@ -5,10 +5,11 @@ def dock():
     result = subprocess.run(["lib/rosetta/source/bin/docking_protocol.linuxgccrelease",
                              "@flag_local_refine", "-overwrite"], stdout=subprocess.PIPE)
     record = result.stdout
-    with open("structures/docked_intermediate/docking_record.txt", "w") as f:
-        f.write(str(record))
-        f.close()
     lines = record.splitlines()
+    with open("structures/docked_intermediate/docking_record.txt", "w") as f:
+        for line in lines:
+            f.write(str(line) + "\n")
+        f.close()
     energy_dict = {}
     for i in range(len(lines)-1, -1, -1):
         if len(energy_dict) >= 3:
@@ -34,7 +35,6 @@ def dock():
 
 def get_energy_value(energy_line):
     components = energy_line.split(":")
-    print(components[-1])
     raw_value = components[-1].strip()
     preprocessed_value = ""
     for i in range(len(raw_value)):
@@ -47,5 +47,5 @@ def get_energy_value(energy_line):
 def write_energy(energy_dict_ref):
     with open("result/binding_energy_based_on_docking.csv", "w") as f:
         for energy_type, energy_value in energy_dict_ref.items():
-            f.write("%s,%f\n" % (str(energy_type), float(energy_value)))
-            print("%s,%f" % (str(energy_type), float(energy_value)))
+            f.write("%s,%f\n" % (str(energy_type.capitalize()), float(energy_value)))
+            print("%s Energy is: %f" % (str(energy_type.capitalize()), float(energy_value)))

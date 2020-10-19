@@ -2,8 +2,6 @@
 # After calling this function, a new pdb file with desired peptide sequence is generated.
 import sys
 import threading
-import pymol2
-from pymol.wizard import Wizard
 from pymol import cmd
 from .residue_matching_loader import load_residue_matching
 
@@ -39,10 +37,8 @@ def mutate_atoms(desired_sequence):
         cmd.get_wizard().do_select("C/%d/" % (i+1))
         cmd.get_wizard().apply()
     cmd.save("structures/mutated_intermediate/mutated_pmhc_complex.pdb")
-    cmd.reset()
     cmd.quit()
     # Release the lock when the program ends
-    # pymol_obj.stop()
     lock.release()
 
 
@@ -52,4 +48,3 @@ def translate_sequence(sequence):
     for i in range(len(sequence)):
         translated_sequence.append(residue_matching[sequence[i]])
     return translated_sequence
-

@@ -1,5 +1,4 @@
-# The executable file of the binding affinity tool based on the Rosetta platform.
-# The estimation does not yield high level of accuracy. The API is designed for rough calculation only.
+# The executable file of mutating the peptide sequence based on the sample file.
 from utility.mutation import mutate_atoms
 from utility.peptide_loader import load_peptides
 
