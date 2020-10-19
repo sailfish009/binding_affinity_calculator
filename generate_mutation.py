@@ -8,6 +8,5 @@ if __name__ == '__main__':
     # load a list of peptide sequence from input file
     peptides = load_peptides("lib/sample_peptide_sequences.txt")
     # generate mutated molecule file for further processing
-    print("Starting the mutation of atoms...")
     for p in peptides:
         mutate_atoms(str(p))

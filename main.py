@@ -5,6 +5,8 @@ import os
 
 
 if __name__ == '__main__':
+    print("Starting the mutation of atoms...")
     os.system("python3 generate_mutation.py")
     print("The mutation of atoms finished. Starting the docking process...")
     dock()
+    print("The docking process completed. Starting the calculation of binding affinity...")
