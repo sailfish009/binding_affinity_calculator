@@ -45,6 +45,7 @@ def get_energy_value(energy_line):
 
 
 def write_energy(energy_dict_ref):
+    print("Some side product of the docking: ")
     with open("result/binding_energy_based_on_docking.csv", "w") as f:
         for energy_type, energy_value in energy_dict_ref.items():
             f.write("%s,%f\n" % (str(energy_type.capitalize()), float(energy_value)))
