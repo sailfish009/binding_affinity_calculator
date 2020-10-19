@@ -31,7 +31,7 @@ def mutate_atoms(desired_sequence):
     # Execute the mutation command based on the PyMOL API.
     # For each round, we construct a new PyMOL object to avoid the problem of different mutation affecting each other.
     cmd.wizard("mutagenesis")
-    cmd.load("structures/sample_p_mhc.pdb")
+    cmd.load("structures/3pwn_clear_original.pdb")
     new_sequence = translate_sequence(desired_sequence)
     for i in range(len(new_sequence)):
         cmd.refresh_wizard()
