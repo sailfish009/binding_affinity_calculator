@@ -1,3 +1,6 @@
+# This file defines the function of performing mutation on the peptide.
+# After referencing this file, the docking process is performed
+# and some primary binding interaction energy is generated.
 import subprocess
 
 

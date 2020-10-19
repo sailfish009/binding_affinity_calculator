@@ -1,5 +1,5 @@
-# This function defines the method of performing mutation on the peptide.
-# After calling this function, a new pdb file with desired peptide sequence is generated.
+# This file defines the function of performing mutation on the peptide.
+# After referencing this file, a new pdb file with desired peptide sequence is generated.
 import sys
 import threading
 from pymol import cmd
