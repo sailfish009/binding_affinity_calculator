@@ -1,3 +1,0 @@
-
-Describe how to create a homology model of the dopamine receptor, a GPCR.  
-The fasta sequence is provided in the starting sequences.

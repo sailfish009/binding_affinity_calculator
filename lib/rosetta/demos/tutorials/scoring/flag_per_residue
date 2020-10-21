@@ -1,3 +1,0 @@
--in:file:s input_files/1qys.pdb
-
--out:file:silent output_files/per_res.sc

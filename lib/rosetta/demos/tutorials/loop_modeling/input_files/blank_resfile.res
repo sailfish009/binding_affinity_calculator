@@ -1,4 +1,0 @@
-ALLAA
-EX 1 EX 2
-USE_INPUT_SC
-start

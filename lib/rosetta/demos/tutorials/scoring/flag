@@ -1,3 +1,0 @@
--in:file:s input_files/1qys.pdb
-
--out:file:scorefile output_files/score.sc

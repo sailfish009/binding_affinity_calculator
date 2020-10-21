@@ -3,9 +3,11 @@
 from utility.dock import dock
 import os
 from utility.side_chain_removal import remove_side_chain
+from utility.dock_peptide import flex_peptide_docking
 
 
 if __name__ == '__main__':
+    '''
     # Execute the mutation source file to change the peptide sequence to the peptide sequence to be calculated
     print("Starting the mutation of atoms...")
     os.system("python3 generate_mutation.py")
@@ -17,3 +19,5 @@ if __name__ == '__main__':
     # Remove the side chain of the MHC to facilitate the further calculation
     print("The docking process completed. Starting the calculation of binding affinity...")
     remove_side_chain()
+    '''
+    flex_peptide_docking()

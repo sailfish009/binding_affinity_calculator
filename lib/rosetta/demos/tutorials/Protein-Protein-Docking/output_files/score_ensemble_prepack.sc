@@ -1,4 +1,0 @@
-SEQUENCE: 
-SCORE: total_score dslf_fa13    fa_atr    fa_dun   fa_elec fa_intra_rep fa_intra_sol_xover4              fa_rep              fa_sol hbond_bb_sc hbond_lr_bb    hbond_sc hbond_sr_bb lk_ball_wtd       omega     p_aa_pp pro_close rama_prepro         ref yhh_planarity description 
-SCORE:     411.315   115.819 -1650.061   464.092  -490.750        2.778              56.195            1089.730            1015.852     -41.030    -108.285     -43.115     -77.081     -26.770      56.241     -31.857    15.657      -0.738      64.638         0.000 3pwn_main_chain_with_peptide_ensemble_prepack_0001
-SCORE:    1996.306   115.819 -1657.942   465.458  -492.243        2.789              57.219            2687.315            1011.466     -40.513    -108.285     -44.860     -77.081     -26.777      56.241     -31.857    15.657      -0.738      64.638         0.000 3pwn_main_chain_with_peptide_ensemble_prepack_0001

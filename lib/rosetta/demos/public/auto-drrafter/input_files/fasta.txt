@@ -1,2 +1,0 @@
->native.pdb A:1-35
-gggggggaaaccccccuuugggggggaaacccccc

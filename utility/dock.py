@@ -28,7 +28,7 @@ def dock():
             bounded_energy = get_energy_value(line)
             energy_dict["unbounded"] = bounded_energy
             continue
-        elif "bound" in line:
+        elif "bound" in line and "unbound" not in line:
             unbounded_energy = get_energy_value(line)
             energy_dict["bounded"] = unbounded_energy
             continue
