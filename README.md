@@ -12,19 +12,13 @@ After that, you need to execute the `scons.py` by inputing the following command
 ```
 If everything goes well, you should be able to see several new directories, including the bin. Now you can start executing the program! If you still have some problem in setting up the environment, you can check [here](https://www.rosettacommons.org/demos/latest/tutorials/install_build/install_build) for more detail.
 ## Input
+To input a peptide sequence, you need to locate the `peptide_sequences_to_be_calculated.txt` file and write a peptide sequence (in abbreviation) in the file. One example is:
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```
+WIKTISKRM
 ```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
