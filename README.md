@@ -2,11 +2,9 @@
 Binding Affinity Calculator is an efficient tool to compute the binding affinity between a unknown peptide and MHC. For now, the Binding Affinity Calculator can be run on Linux system only.
 
 ## Setup
-Before executing the codes of Binding Affinity Calculator, you need to compile the Rosetta source code to create an approperiate environment for execution. 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
+After cloning the project, there are several things to do before executing the codes of Binding Affinity Calculator. First of all, you need to compile the Rosetta source code to create an approperiate environment for execution. To do this, you need to first locate the position of rosetta source code by typing in the following commands in the Linux terminal.
 ```bash
-pip install foobar
+cd lib/rosetta/source
 ```
 
 ## Usage
