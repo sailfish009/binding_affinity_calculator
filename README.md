@@ -10,7 +10,7 @@ After that, you need to execute the `scons.py` by inputing the following command
 ```bash
 ./scons.py -j <number_of_cores_to_use> mode=release bin
 ```
-If everything goes well, you should be able to see several new directories, including the bin. Now you can start executing the program!
+If everything goes well, you should be able to see several new directories, including the bin. Now you can start executing the program! If you still have some problem in setting up the environment, you can check [here](https://www.rosettacommons.org/demos/latest/tutorials/install_build/install_build) for more detail.
 ## Input
 
 ```python
