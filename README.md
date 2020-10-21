@@ -6,12 +6,12 @@ After cloning the project, there are several things to do before executing the c
 ```bash
 cd lib/rosetta/source
 ```
-After that, you need to execute the scons.py by executing the following commands in the Linux terminal:
+After that, you need to execute the 'scons.py' by inputing the following commands in the Linux terminal:
 ```bash
 ./scons.py -j <number_of_cores_to_use> mode=release bin
 ```
 If everything goes well, you should be able to see several new directories, including the bin. Now you can start executing the program!
-## Usage
+## Input
 
 ```python
 import foobar
