@@ -1,6 +1,6 @@
 -in:file:s structures/mutated_intermediate/mutated_pmhc_complex.pdb
 
--nstruct 1
+-nstruct 100
 
 -docking_local_refine
 -use_input_sc
